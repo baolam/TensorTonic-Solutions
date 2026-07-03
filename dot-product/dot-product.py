@@ -6,6 +6,14 @@ def dot_product(x, y):
     Must return a float.
     """
     # Write code here
-    x = np.array(x)
-    y = np.array(y)
-    return (x * y).sum()
+    # Dot product trong AI???
+    # --> 
+    # Naive for
+    s = 0
+    if len(x) != len(y):
+        raise ValueError()
+    
+    for x1, x2 in zip(x, y):
+        s += x1 * x2
+    
+    return s
