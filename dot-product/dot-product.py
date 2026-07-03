@@ -7,13 +7,9 @@ def dot_product(x, y):
     """
     # Write code here
     # Dot product trong AI???
-    # --> 
+    # -->
+    x = np.array(x)
+    y = np.array(y)
+    return x @ y
     # Naive for
-    s = 0
-    if len(x) != len(y):
-        raise ValueError()
     
-    for x1, x2 in zip(x, y):
-        s += x1 * x2
-    
-    return s
