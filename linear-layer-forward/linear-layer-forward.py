@@ -8,4 +8,5 @@ def linear_layer_forward(X, W, b):
     X = np.array(X)
     W = np.array(W)
     b = np.array(b)
+
     return (X @ W + b).tolist()
